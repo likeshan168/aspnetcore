@@ -1,0 +1,14 @@
+﻿
+#divForm{
+    border:1px solid;
+    border-radius:10px;
+    /*box-shadow:#ff6a00 10px 10px inset;*/
+    background:url(../../images/bg_flower.gif) no-repeat;
+    background-size:40px;
+    background-position:right;
+    background-origin:content-box;
+}
+
+h4{
+    text-shadow:5px 5px 5px #0094ff;
+}
