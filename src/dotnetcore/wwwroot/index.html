@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ASP.NET Core: AngularJS 2 Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/es6-shim.min.js"></script>
+    <script src="/js/system-polyfills.js"></script>
+    <script src="/js/angular2-polyfills.js"></script>
+    <script src="/js/system.src.js"></script>
+    <script src="/js/Rx.js"></script>
+    <script src="/js/angular2.dev.js"></script>
+    <script src="/js/router.js"></script>
+    <script>
+        System.config
+          ({
+              packages:
+              {
+                  "app":
+                  {
+                      defaultExtension: 'js'
+                  }
+              }
+          });
+        System.import('app/boot').then(null, console.error.bind(console));
+    </script>
+</head>
+<body>
+    <angularjs2demo>Please wait...</angularjs2demo>
+</body>
+</html>
