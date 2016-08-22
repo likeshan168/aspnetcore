@@ -1,0 +1,38 @@
+﻿$fontSize: 12px;
+
+$linkColor: #4cff00 #ff6a00 !default;
+
+$headings: (h1:2em,h2:1.5em,h3:1.2em);
+
+
+body {
+    background-color: #66f3cc;
+    font-size: $fontSize;
+}
+
+a {
+    color: nth($linkColor,1);
+
+    &:hover {
+        color: nth($linkColor,2);
+    }
+}
+
+
+@each $header,$size in $headings {
+    #{$header} {
+        font-size: $size;
+    }
+}
+
+@mixin center-block{
+    margin-left:auto;
+    margin-right:auto;
+    height:auto;
+    width:auto;
+    text-align:center;
+}
+
+.demo{
+    @include center-block;
+}
